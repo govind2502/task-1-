@@ -1,0 +1,31 @@
+.details-page { padding-top: 24px; padding-bottom: 40px; }
+.back-button { margin-bottom: 20px; }
+
+.details-top { display: flex; gap: 28px; align-items: flex-start; }
+.details-image { flex: 3; min-width: 0; border: 1px solid #dcdfe4; background: #eceff2; }
+.details-image img { width: 100%; max-height: 460px; object-fit: cover; }
+
+.details-info { flex: 2; min-width: 0; }
+.details-info h1 { font-size: 28px; margin-bottom: 4px; }
+.details-price { font-size: 26px; font-weight: 700; margin: 12px 0 16px; }
+.details-price span { font-size: 14px; font-weight: 400; color: #6c757d; }
+
+.details-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.details-table th, .details-table td { text-align: left; padding: 8px 10px; border: 1px solid #dcdfe4; }
+.details-table th { width: 40%; background: #f6f7f9; font-weight: 600; }
+
+.details-section { margin-top: 32px; }
+.details-section h2 { font-size: 20px; margin-bottom: 10px; }
+.details-section p { max-width: 75ch; }
+
+.map-container { height: 380px; width: 100%; border: 1px solid #dcdfe4; z-index: 0; }
+.map-button { margin-top: 12px; }
+.map-message { margin-top: 8px; font-size: 14px; color: #b02a37; }
+
+@media (max-width: 800px) {
+  .details-top { flex-direction: column; }
+  .details-image, .details-info { width: 100%; flex: none; }
+  .details-info h1 { font-size: 24px; }
+  .map-container { height: 300px; }
+  .map-button { width: 100%; }
+}
